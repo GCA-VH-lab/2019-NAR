@@ -1,0 +1,14 @@
+	S1_WT_30C_rep1	S2_KO_30C_rep1	S3_WT_30C_rep2	S4_KO_30C_rep2	S5_WT_20C_rep1	S6_KO_20C_rep1	S7_WT_20C_rep2	S8_KO_20C_rep2
+20	12	12	12	12	12	12	12	12
+21	13	13	13	13	13	13	13	13
+22	13	13	13	13	13	13	13	13
+23	nan	nan	nan	nan	13	13	nan	nan
+24	nan	nan	nan	nan	12	nan	nan	nan
+25	nan	12	12	12	12	12	12	12
+26	nan	nan	nan	nan	13	13	13	13
+27	nan	nan	nan	nan	11	11	12	12
+28	12	12	12	12	12	12	12	12
+29	13	13	13	13	13	13	13	13
+30	14	14	14	14	14	14	14	14
+31	nan	nan	nan	nan	nan	nan	nan	nan
+32	nan	nan	nan	nan	nan	nan	nan	nan

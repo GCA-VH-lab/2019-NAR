@@ -1,0 +1,79 @@
+# Start: 2
+# Stop:  9
+#
+# \\  1 - Download the data
+# \\  2 - Perform adapter trimming on downloaded FASTQ files
+# \\  3 - Perform quality filtering on trimmed FASTQ files
+# \\  4 - Remove sequences that align to non-coding RNAs from the filtered FASTQ files
+# \\  5 - Align sequences to the genome from the ncRNA subtracted FASTQ files
+# \\  6 - Create Raw Assignment from the genome aligned sorted/indexed BAM file
+# \\  7 - Create Metagene tables
+# \\  8 - Create Metagene plots
+# \\  9 - Corrected assignment
+#
+# Clean: rm
+#
+# \\ gzip  - Gzip files after they are no longer necessary
+# \\ rm    - Remove files after they are no longer necessary
+#
+# Quality: 0.80
+#
+# \\ Quality filter threshold for retaining reads (0.0 - 1.0). Higher is more selective.
+#
+# Mapping: 5
+#
+# \\ 5 - Map reads according to their 5' end
+# \\ 3 - Map reads according to their 3' end
+#
+# ReadLenMiN: 19
+# ReadLenMaX: 32
+#
+# \\ 25 - ReadLenMiN length of reads included -! going to replace Length
+# \\ 35 - ReadLenMaX length of reads included -! going to replace Length
+#
+# Normalised: rpm
+#
+# \\ rpm - use normalized data - reads per miljon
+# \\ raw - raw counts
+#
+# MappedTwice: No
+#
+#  \\ No or Yes IF Yes include reads mapped once and twice
+#
+# Save2csv: False
+#
+#  \\ boolean - False or True
+#
+# MetagThreshold: 20
+#
+# \\ 30 - raw counts around start or stop if less ignore a gene/region
+# \\ If Normalized = "rpm"  MetagThreshold is readjusted by dividing normalization_factor inside program
+# \\ FILTER 3
+#
+# MetagSpan: 60
+#
+# \\ 60 - number of nucleotides before and after start/stop in metagene profiles
+#
+# MetagSpancorr: 120
+#
+# \\ 90 - number of nucleotides before and after start/stop in metagenomic profile from corrected data
+#
+#
+# OffsetFile: readlength_offsets.txt
+#
+# \\ file with read length and offsets - only these readlength are included into corrected/final assignment
+#
+# cpu: 6
+#
+# \\ number of cores - have effect in some steps
+#
+
+ERR3218438	S1_WT_30C_rep1
+ERR3218439	S3_WT_30C_rep2
+ERR3218430	S2_KO_30C_rep1
+ERR3218431	S4_KO_30C_rep2
+ERR3218434	S5_WT_20C_rep1
+ERR3218435	S7_WT_20C_rep2
+ERR3218426	S6_KO_20C_rep1
+ERR3218427	S8_KO_20C_rep2
+
